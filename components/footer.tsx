@@ -24,7 +24,7 @@ export function Footer() {
         </a>
       </div>
       <p className="mt-6 text-xs text-[#6c7772]">
-        Copyright &copy; 2026 IITC Next contributors.
+        Copyright &copy; 2026, IITC Next contributors.
       </p>
     </footer>
   );
