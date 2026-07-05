@@ -46,22 +46,23 @@ export default function Home() {
       <section>
         <SectionContent>
           <p>
-            IITC Next is yet another powerful browser add-on that modifies and
-            enhances the official Ingress intel map. It shares the similar
-            mechanism as IITC-CE, but uses a different engine: Cesium.
+            IITC Next is another powerful browser add-on that modifies and
+            enhances the official Ingress intel map. It uses a similar
+            mechanism to IITC-CE, but with a different rendering engine:
+            CesiumJS.
           </p>
           <p>
-            The main purpose of this version of IITC is to create a more modern
-            look of the Ingress intel map by enabling it to zoom fractionally and
-            show the world map as a globe. This way, continental links and fields
-            would appear more naturally and all the entities can be rendered
-            on a 3D terrain.
+            The main purpose of this version of IITC is give Ingress Intel Map
+            a more modern look and feel by enabling fractional zooming and
+            displaying the world map as a globe. This allows continental links
+            and fields appear more naturally, while all the entities can be
+            rendered on 3D terrain.
           </p>
           <p>
-            This project is not aimed to replace the community edition of IITC.
-            The community edition is much more powerful for its rich plugin
-            ecosystem. While we have already finished all the basic functionalities,
-            we need time to build all the plugins you love.
+            This project is not intended to replace the community edition of IITC.
+            IITC-CE is still much more powerful thanks to its rich plugin ecosystem.
+            Although we have already implemented all the basic functionalities,
+            we still need time to build the plugins you all know and love.
           </p>
         </SectionContent>
       </section>
@@ -70,13 +71,54 @@ export default function Home() {
         <SectionTitle id="downloads">
           Downloads
         </SectionTitle>
+        <SectionTitle as="h3">
+          Userscript
+        </SectionTitle>
         <SectionContent>
           <p>
-            Downloads are available in our{" "}
-            <a href="https://github.com/homanw104/iitc-next/releases" target="_blank">
-              GitHub releases page
+            To use the userscript on your browser, you need to install a
+            userscript manager such as{" "}
+            <a href="https://www.tampermonkey.net/" target="_blank">
+              Tampermonkey
+            </a>
+            . After that, you can install the userscript from{" "}
+            <a
+              href="https://github.com/homanw104/iitc-next/releases/latest/download/iitc-next.user.js"
+              target="_blank"
+            >
+              here
             </a>
             .
+          </p>
+          <p>
+            Note: You need to disable the IITC Button extension and disable all
+            IITC-CE related scripts in your userscript manager to avoid conflicts.
+          </p>
+        </SectionContent>
+        <SectionTitle as="h3">
+          Android
+        </SectionTitle>
+        <SectionContent>
+          <p>
+            Downloads are available from{" "}
+            <a
+              href="https://play.google.com/store/apps/details?id=world.homans.iitcnext"
+              target="_blank"
+            >
+              Google Play
+            </a>
+            {" "}or from{" "}
+            <a
+              href="https://github.com/homanw104/iitc-next/releases"
+              target="_blank"
+            >
+              GitHub Releases
+            </a>
+            .
+          </p>
+          <p>
+            Note: If you decide to switch between Google Play and GitHub Release,
+            you need to uninstall the existing version first as they use different signature keys.
           </p>
         </SectionContent>
       </section>
@@ -102,12 +144,22 @@ export default function Home() {
           FAQ
         </SectionTitle>
         <SectionContent>
-          <p className="font-semibold text-[#10201a]">
+          <p className="font-semibold">
+            Q: Is IITC Next a plugin of IITC?
+          </p>
+          <p>
+            No. IITC Next is a brand new script that is built from scratch.
+            It is not a plugin of IITC, and it does not depend on IITC to run.
+          </p>
+          <p className="font-semibold">
             Q: Can I use IITC-CE plugins for IITC Next?
           </p>
           <p>
-            A: No. IITC Next uses a different architecture than IITC-CE.
+            No, you can&#39;t.
+            IITC Next and IITC-CE are fundamentally different
+            in terms of the tech stack they use.
             Plugins cannot be shared across two applications.
+            There&#39;s no plan to support original IITC-CE plugins in IITC Next.
           </p>
         </SectionContent>
       </section>
@@ -119,7 +171,8 @@ export default function Home() {
         <SectionContent>
           <p>
             If you are grateful to help us continue our development, you can
-            donate via <a href="https://wise.com/pay/me/homanmw" target="_blank">Wise</a>.
+            donate via <a href="https://wise.com/pay/me/homanmw" target="_blank">Wise</a>{" "}
+            or <a href="https://www.patreon.com/homanw104/posts/buy-me-coffee-162980115" target="_blank">Patreon</a>.
           </p>
         </SectionContent>
       </section>
